@@ -1,0 +1,6 @@
+# This file avoids pushing node_modules and env files to git
+# Node modules can be really large and unecessary to push to git
+# env contains sensitive DB info, which shouldn't be shared 
+node_modules
+.env
+.eslint.config.mjs

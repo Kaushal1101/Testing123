@@ -1,0 +1,7 @@
+The steps taken to build this app
+
+Backend folder created, with server.js file.
+
+LEFT OFF AT 
+Edited journalController to have all authentication (and merge)
+Added merge route to journalRoutes 

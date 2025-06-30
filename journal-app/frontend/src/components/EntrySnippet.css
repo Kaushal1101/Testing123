@@ -1,0 +1,81 @@
+.journal-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: #fff;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.journal-meta {
+  flex: 1;
+  padding-right: 20px;
+  text-align: left;
+}
+
+.journal-title {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.journal-sub,
+.journal-date {
+  margin: 4px 0;
+  color: #555;
+  font-size: 0.9em;
+}
+
+.journal-divider {
+  width: 1px;
+  background-color: #e0e0e0;
+  height: 100%;
+  margin: 0 10px;
+}
+
+.journal-snippet {
+  flex: 1;
+  font-size: 0.95em;
+  color: #333;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.journal-buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.journal-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.85em;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.journal-btn.update {
+  background-color: #4caf50;
+  color: white;
+}
+
+.journal-btn.update:hover {
+  background-color: #45a049;
+}
+
+.journal-btn.delete {
+  background-color: #f44336;
+  color: white;
+  margin-left: 20px;
+}
+
+.journal-btn.delete:hover {
+  background-color: #d32f2f;
+}

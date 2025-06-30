@@ -1,0 +1,24 @@
+React - A fast, compact UI-Based system
+
+Think of react as a smart home, with components like a living room, kitchen, door, windows, etc. Each component is built seperately, then 
+combined to build one home (web app). Each component manages its own state (eg living room lights being on/off) and each component can
+simply re-render itself, without affecting other componenets.
+
+
+Redux
+
+Now if the smart home becomes more complex. We want a central panel to control all lights, all doors to be locked when the alarm is triggered,
+or a thermostat to control every room's temperature. Instead of each component being independent, we introduce a control room that knows
+everything, which is Redux.
+
+Redux stores all global states in one place (control room). Send instructions (called actions) to update the state, and notifies relevant
+parts of the house (React components) when changes are made.
+
+
+React handles what you see (UI)
+Redux handles what you do and remember (data/state)
+
+
+
+
+

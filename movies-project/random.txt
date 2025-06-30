@@ -1,0 +1,101 @@
+These are the step by step instructions for the setup and design of the movies project.
+
+First, create a backend folder and inside it, create a server.js file.
+
+Next, in the movies-project dir, run npm init. Set entry point to server.js (not sure if it really matters,
+ can change it later anyways)
+
+Then, add a .gitignore file in the dir, and fill it in with 
+
+Next run npm install express mongoose colours dotenv (for now, this dependencies are enough)
+
+Then run npm install -D nodemon (node monitor continously runs program so changes are reflected without restarting server)
+
+In the package.json file, remove the line " "test": "echo \"Error: no test specified\" && exit 1" ".
+They are replaced with two lines for start and server terminal commands. These modifications allow us to run 
+the long commands using the shortcuts npm run start and npm run server.
+
+Create a .env file in backend to store sensitive data, that can be accessed by other js files
+
+Create a new folder, routes under backend, and a file movieRoutes.js under it. This stores all routes for server
+
+Create a new folder, controller, with movieController.js under it. This defines all the CRUD functions for requests.
+
+Create a new folder, middleware, with errorMiddleware.js under it. This defines an error handler to catch errors.
+
+Next install async handler using npm install express-async-handler to handle errors asynchronously
+
+Create a new folder, models, with movieModels.js
+
+Create a config folder in backend, with file db.js
+
+Add userModel.js to models, userController.js to controller, and userRoutes.js to routes
+
+Install npm install bcryptjs jsonwebtoken (for JWT)
+
+Create file authMiddleware under middleware
+
+Update .env with JWT secret
+
+** Use Postman to check all server requests and see how the database works (can be done on browser, but easier using Postman)
+
+FRONTEND:
+
+Run npx create-react-app frontend --template redux (if not working, try create-react-app@latest)
+
+Go to package.json (in movies-project, not inside backend or frontend) and add a client line under scripts (see package.json)
+
+Run npm run client to see redux page on browser. If not working, cd into frontend and run "npm install @reduxjs/toolkit react-redux web-vitals" and try again
+
+Delete App.css and logo.svg as we don't need them
+
+Make respective changes to App.js, index.js, index.css
+
+Delete counters folder under features
+
+Create folder pages under src, and 3 pages Dashboard, Login, and Register
+
+Install the extension ES7+ React/Redux/React-Native snippets 
+
+Type rfce in each page to create template for that page (remove imported React as it's not useful)
+
+cd into frontend and install npm i react-router-dom
+
+Under src, create a folder componenets, with a file Header.jsx
+
+cd into frontend, and run npm i react-icons 
+
+In movies-project, install npm i -D concurrently
+
+Create a new folder, auth, under features, with file authSlice.js
+
+Create file authService.js under features
+
+Update store.js
+
+cd into frontend, and install npm i axios react-toastify
+
+Edit package.json in frontend, to add proxy
+
+Optional: Add Spinner.jsx under components for spinning icon during loading times
+
+Make relevant changes to authSlice, authService, store, Login, and Register
+
+Edit dashboard page code so you can't access dahsboard page without logging in
+
+Create movies folder under features, with movieService.js and movieSlice.js
+
+Edit store.js to include the movieReducer now
+
+Add a movieForm.jsx file to components
+
+Add a movieItem.jsx file to componenets
+
+Some edits were made to frontend and backed to resolve issues in movie rendering.
+
+
+
+
+
+
+

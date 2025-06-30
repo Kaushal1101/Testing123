@@ -1,0 +1,4 @@
+node_modules
+# Want to see what's contained in the env through git, though ideally shouldn't be pushed
+# .env
+.eslint.config.mjs
